@@ -1,0 +1,1 @@
+from netbox_quicklinks.config import NetboxQuickLinksConfig as config

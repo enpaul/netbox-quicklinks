@@ -1,9 +1,17 @@
+"""Define the required ``PluginConfig`` class and set parameters
+
+See here for more info: https://docs.netbox.dev/en/stable/plugins/development/#pluginconfig
+"""
 import extras.plugins
 
 from netbox_quicklinks import __about__
 
 
-class NetboxQuickLinksConfig(extras.plugins.PluginConfig):
+class NetboxQuickLinksConfig(
+    extras.plugins.PluginConfig
+):  # pylint: disable=too-few-public-methods
+    """Configuration for the Netbox-Quicklinks plugin"""
+
     name = __about__.__namespace__
     verbose_name = "Netbox Quick Links"
     description = __about__.__summary__

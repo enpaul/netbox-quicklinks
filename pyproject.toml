@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "netbox-quicklinks"
-version = "0.1.0"
+version = "0.1.1"
 description = "Netbox plugin for supporting quick links based on unique item values"
 authors = ["Ethan Paul <24588726+enpaul@users.noreply.github.com>"]
 license = "MIT"

@@ -40,11 +40,15 @@ class QuickLinkView(
                 f"No quick link named {err} is configured"
             ) from None
 
-        # TODO: handle a keyerror here
-        module_name = ".".join(config["field"].split(".")[:-2])
-        model_name = config["field"].split(".")[-2]
-        field_name = config["field"].split(".")[-1]
-        is_case_sensitive = config.get("case_sensitive", True)
+        try:
+            module_name = ".".join(config["field"].split(".")[:-2])
+            model_name = config["field"].split(".")[-2]
+            field_name = config["field"].split(".")[-1]
+            is_case_sensitive = config.get("case_sensitive", True)
+        except KeyError as err:
+            raise RuntimeError(
+                f"Configuration error: quick link '{category}' is missing required setting {err}"
+            ) from None
 
         try:
             model = getattr(importlib.import_module(module_name), model_name)

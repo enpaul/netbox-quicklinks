@@ -45,7 +45,7 @@ example, `https://netbox.example.com/dicm/devices/1234/`). The map key (i.e. `de
 example above) defines the URL namespace under `links/` that the redirect will be
 available under. Under each quick link entry are the below settings:
 
-- The value of the `attribute` key defines the model attribute that the lookup will query
+- The value of the `field` key defines the model attribute that the lookup will query
   against
 - The boolean under the `case_sensitive` key defines whether the lookup is done with case
   sensitive values or not

@@ -21,11 +21,11 @@ class NetboxQuickLinksConfig(
     default_settings = {
         "quick_links": {
             "seriral": {
-                "attribute": "dcim.models.Device.serial",
+                "field": "dcim.models.Device.serial",
                 "case_sensitive": True,
             },
             "dev": {
-                "attribute": "dcim.models.Device.name",
+                "field": "dcim.models.Device.name",
                 "case_sensitive": False,
             },
         },

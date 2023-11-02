@@ -41,9 +41,9 @@ class QuickLinkView(
             ) from None
 
         # TODO: handle a keyerror here
-        module_name = ".".join(config["attribute"].split(".")[:-2])
-        model_name = config["attribute"].split(".")[-2]
-        field_name = config["attribute"].split(".")[-1]
+        module_name = ".".join(config["field"].split(".")[:-2])
+        model_name = config["field"].split(".")[-2]
+        field_name = config["field"].split(".")[-1]
         is_case_sensitive = config.get("case_sensitive", True)
 
         try:

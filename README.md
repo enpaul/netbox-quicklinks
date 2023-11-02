@@ -97,7 +97,9 @@ are tracked on [Github](https://github.com/enpaul/netbox-quicklinks/releases),
   and [open a pull request](https://github.com/enpaul/netbox-quicklinks/compare).
 
 Developing this project requires [Python 3.11+](https://www.python.org/downloads/) and
-[Poetry 1.5](https://python-poetry.org/docs/#installation) or later.
+[Poetry 1.5](https://python-poetry.org/docs/#installation) or later. GNU Make can
+optionally be used to quickly setup a local development environment using `make dev`, but
+this is not required. See `make help` for other available targets.
 
 In addition, developers will require a development installation of Netbox. See setup
 instructions

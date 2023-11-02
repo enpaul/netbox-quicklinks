@@ -5,6 +5,20 @@ description = "Netbox plugin for supporting quick links based on unique item val
 authors = ["Ethan Paul <24588726+enpaul@users.noreply.github.com>"]
 license = "MIT"
 readme = "README.md"
+repository = "https://github.com/enpaul/netbox-quicklinks/"
+keywords = ["netbox", "plugin", "quick", "links"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Plugins",
+    "Natural Language :: English",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Operating System :: OS Independent",
+]
 
 [tool.poetry.dependencies]
 python = "^3.10"
@@ -21,5 +35,5 @@ pylint = "^3.0.2"
 reorder-python-imports = "^3.12.0"
 
 [build-system]
-requires = ["poetry-core"]
+requires = ["poetry-core>=1.1.0"]
 build-backend = "poetry.core.masonry.api"
